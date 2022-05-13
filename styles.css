@@ -1,0 +1,32 @@
+
+h1{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+  padding: 50px;
+  text-align: center;
+}
+
+.botones-inicio{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  margin-top: 75px;
+}
+
+button{
+  background: #0A3871;
+  border-radius: 24px;
+  color: aliceblue;
+  width: 317px;
+  height: 114px;
+  font-size: larger;
+}
+button:hover{
+  background-color: #193a62;
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+
