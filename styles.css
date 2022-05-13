@@ -1,32 +1,83 @@
+*{
+  margin: 0;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#logo{
+  position: fixed;
+  left: 10px;
+  top: 10px;
+}
 
 h1{
-  font-family: 'Courier New', Courier, monospace;
   font-size: 40px;
-  padding: 50px;
-  text-align: center;
+  padding: 10px;
+}
+
+.tablero{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .botones-inicio{
   display: flex;
-  justify-content: center;
   flex-direction: column;
   gap: 30px;
   align-items: center;
-  margin-top: 75px;
 }
 
 button{
+  margin: 50px auto;
   background: #0A3871;
   border-radius: 24px;
   color: aliceblue;
-  width: 317px;
-  height: 114px;
+  width: 350px;
+  height: 75px;
   font-size: larger;
 }
 button:hover{
   background-color: #193a62;
   font-weight: bolder;
   font-size: x-large;
+}
+
+#horca{
+  display: none;
+}
+
+.letras{
+  display: none;
+}
+
+
+
+
+/* footer */
+
+.bottom-container {
+  background-color: #3b4d64;
+  height: 40px;
+  width: 100%;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+}
+.bottom-container a {
+  color: #11999e;
+  margin: 10px 25px;
+  text-decoration: none;
+}
+a:hover {
+  color: #272c2c;
+}
+
+.bottom-container p {
+  color: #eaf6f6;
+  font-size: small;
+  padding-top: 10px;
 }
 
 
