@@ -120,13 +120,29 @@ a:hover {
     width: 400px;
     height: 400px;
     position: fixed;
-    top: 65;
+    top: 100px;
     left: 0;
   }
   .letras{
     position: fixed;
     bottom: 100px;
     right: 100px;
+  }
+  #logo{
+    position: relative;
+  }
+  #secreto{
+    border: 1px solid green;
+    border-radius: 5px;
+    background-color: aliceblue;
+  }
+  #final{
+    display: none;
+    font-size: large;
+    color: steelblue;
+    border: 1px solid green;
+    border-radius: 5px;
+    background-color: aliceblue;
   }
 }
 
