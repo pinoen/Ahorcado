@@ -11,8 +11,6 @@ function elegirPalabra(){
   palabra = palabras[Math.floor(Math.random()*palabras.length)];
 }
 
-elegirPalabra();
-
 let empezar = document.querySelector('#empezar');
 let nuevaPalabra = document.querySelector('#nueva-palabra');
 let agregar = document.querySelector('#agregar');
@@ -25,7 +23,10 @@ empezar.addEventListener('click', ()=>{
   nuevaPalabra.style.display = 'none';
   agregar.style.display = 'none';
   horca.style.display = 'flex';
+  
+  elegirPalabra();
   mostrarLetras();
+
   document.addEventListener('keydown', (e)=>{
     letraElegida = e.key.toUpperCase();
     procesarLetras(letraElegida);
@@ -34,7 +35,7 @@ empezar.addEventListener('click', ()=>{
 
 nuevaPalabra.addEventListener('click', ()=>{
   palabras.push(agregar.value);
-  console.log(palabras);
+  agregar.value = '';
 })
 
 function mostrarLetras(){
@@ -81,7 +82,7 @@ reset.addEventListener('click', ()=>{
   horca.src = 'images/horca0.png';
   palabra = '';
   letraElegida = '';
-  maxDesaciertos = 6;
+  maxDesaciertos = 7;
   desaciertos = 0;
   respuestas = [];
   espacioLetras = null;
