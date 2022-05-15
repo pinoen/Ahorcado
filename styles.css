@@ -80,10 +80,7 @@ button:hover{
   position: fixed;
   bottom: 300px;
   right: 200px;
-
 }
-
-
 
 
 /* footer */
@@ -111,4 +108,25 @@ a:hover {
   padding-top: 10px;
 }
 
+@media (max-width: 768px) {
+  * {
+    width: auto;
+  }
+  .tablero{
+    flex-direction: column;
+  }
+  #horca{
+    display: none;
+    width: 400px;
+    height: 400px;
+    position: fixed;
+    top: 65;
+    left: 0;
+  }
+  .letras{
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+  }
+}
 

@@ -88,7 +88,3 @@ reset.addEventListener('click', ()=>{
   elegirPalabra();
   mostrarLetras();
 })
-
-
-
-
