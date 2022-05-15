@@ -57,6 +57,12 @@ button:hover{
   font-weight: bolder;
   font-size: x-large;
   cursor: pointer;
+}
+
+#agregar{
+  font-size: large;
+  width: 550px;
+  height: 40px;
 
 }
 

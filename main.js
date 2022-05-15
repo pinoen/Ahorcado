@@ -15,6 +15,7 @@ elegirPalabra();
 
 let empezar = document.querySelector('#empezar');
 let nuevaPalabra = document.querySelector('#nueva-palabra');
+let agregar = document.querySelector('#agregar');
 let horca = document.querySelector('#horca');
 let final = document.querySelector('#final');
 let reset = document.querySelector('#reset');
@@ -22,19 +23,24 @@ let reset = document.querySelector('#reset');
 empezar.addEventListener('click', ()=>{
   empezar.style.display = 'none';
   nuevaPalabra.style.display = 'none';
+  agregar.style.display = 'none';
   horca.style.display = 'flex';
   mostrarLetras();
+  document.addEventListener('keydown', (e)=>{
+    letraElegida = e.key.toUpperCase();
+    procesarLetras(letraElegida);
+  })
+})
+
+nuevaPalabra.addEventListener('click', ()=>{
+  palabras.push(agregar.value);
+  console.log(palabras);
 })
 
 function mostrarLetras(){
   espacioLetras = palabra.split('').map(letra => (respuestas.indexOf(letra) >= 0 ? letra : ' _ ')).join(''); 
   document.querySelector('#secreto').textContent = espacioLetras;
   }
-
-document.addEventListener('keydown', (e)=>{
-  letraElegida = e.key.toUpperCase();
-  procesarLetras(letraElegida);
-})
 
 function procesarLetras(letra){
   respuestas.indexOf(letra) === -1 ? respuestas.push(letra) : null;
