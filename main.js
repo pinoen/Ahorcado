@@ -23,12 +23,14 @@ empezar.addEventListener('click', ()=>{
   nuevaPalabra.style.display = 'none';
   agregar.style.display = 'none';
   horca.style.display = 'flex';
+  alert('Ingresar una letra del abecedario desde el teclado. Se trata de una fruta, verdura o un tipo de comida. Suerte!');
   
   elegirPalabra();
   mostrarLetras();
 
   document.addEventListener('keydown', (e)=>{
     letraElegida = e.key.toUpperCase();
+    if(!letraElegida.match(/[A-Z]/)) alert('No ingresar numeros, simbolos o teclas especiales! Solamente ingresar letras!');
     procesarLetras(letraElegida);
   })
 })
