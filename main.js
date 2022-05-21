@@ -61,7 +61,8 @@ function procesarLetras(letra){
 function checkWinner(){
   if(espacioLetras === palabra){
     final.style.display = 'flex';
-    final.textContent = 'Muy bien, ganaste!';
+    final.textContent = 'Ganaste, felicidades!';
+    final.style.color = 'green';
     reset.style.display = 'flex';
   }
 }
