@@ -69,7 +69,8 @@ function checkWinner(){
 function checkGameOver(){
   if(maxDesaciertos === desaciertos){
     final.style.display = 'flex';
-    final.textContent = 'Perdiste!, la palabra era: ' + palabra;
+    final.textContent = 'Fin del juego! la palabra era: ' + palabra;
+    final.style.color = 'red';
     reset.style.display = 'flex';
   }
 }
